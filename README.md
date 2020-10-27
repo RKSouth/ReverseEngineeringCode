@@ -31,7 +31,28 @@ In the `Develop` folder, there is starter code for a project. Begin inspecting t
 
 ## Getting Started
 
+1. To begin, clone the repository by selecting clone and copying the https file. Open your terminal on your computer to the file you want and type in git clone, then right click to display your copied text. 
+2. Open your mysql workbench and open a new SQL tab for executing queries. In your type in 
+Create database passport_demo;
+Use passport_demo;
+
+3. Run your query and then save it under the name passport_demo
+
+4. In your code editor (with the files open) -right click on server.js and select "Open in Integrated Terminal" 
+
+5. In your terminal, type a series of commands in order-followed by the enter key
+* npm install
+* npm init -y
+* npm install express mysql2 express-session sequelize nodemon
+* npm init -y
+* nodemon server.js
+
+6. Go to the config folder and open config.json, in the top section where it says password and username, enter your password and username. Be sure to use quotation marks, type it after the colon and remove any text that was there previously (such as NULL or another password). But leave all other indices alone. 
+7. open browser and put in http://localhost:8000/
+
 ## Tutorial
+
+This section describes each file's intended purpose and what it's dependencies are. 
 
 ## Config
 
@@ -219,49 +240,21 @@ __Dependencies?__
 * PORT
 
 
-At the end of the tutorial, add instructions for how you could now add changes to this project.
+## Usage
+### This is a basic tutorial of the code for me (or another developer) to use to help them understand the code
 
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+## Author 
+Rachael Kelm-Southworth
 
-```
-AS A developer
+* [linkedin](https://www.linkedin.com/in/rachael-kelm-southworth-87a3831b3) 
 
-I WANT a walk-through of the codebase
+* [github](https://github.com/RKSouth/)
 
-SO THAT I can use it as a starting point for a new project
-```
+* [portfolio](https://rksouth.github.io/responsive_portfolio/)
 
-## Business Context
+ ## Credits
 
-When joining a new team, you will be expected to inspect a lot of code that you have never seen before. Rather than having a team member explain every line for you, you will dissect the code by yourself, saving any questions for a member of your team.
+I would like to thank Kerwin, Manuel, Roger, Jerome and all my classmates for helping me understand this subject matter and anyone that contributed to make the base code.
 
-## Acceptance Criteria
-
-```md
-GIVEN a Node.js application using Sequelize and Passport
-WHEN I follow the walkthrough
-THEN I understand the codebase
-```
-- - -
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* A link to code repo that contains the code within the `Develop` directory. The repo should contain a tutorial written in markdown explaining how the application functions; a tutorial.
-
-* The `Develop` directory should be updated with original comments on what the code is doing line-by-line. 
-
-* Optionally - you may also include a video explaining the application in `Develop` directory and display that video in the README Doc. 
-
-* Both the video and the written tutorial should include visual graphics to support your lesson. 
-
-`Note`: With both cases, written tutorial and/or video tutorial:
-
-* line-by-line commenting is expected within the code. 
-* A formatted README that list a written introduction of the purpose of the application and a high level explanation of how it works. 
-
-* **Detailed** explanation of how the application functions can be expressed in a **Video** **OR** a **Written Tutorial**
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
