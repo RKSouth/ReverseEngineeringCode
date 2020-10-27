@@ -12,20 +12,20 @@ In the `Develop` folder, there is starter code for a project. Begin inspecting t
 
 #### isAuthenticated.js
 
-#### Purpose
+__Purpose__
 
 This file restricts routes tht user is not allowed to visit if they are not logged in -i.e. the logged in page.
 
-#### Dependencies?
+__Dependencies?__
 
 
 ### config.json
 
-#### Purpose
+__Purpose__
 
-connection configuration to connect to the server and the mysql database.
+Connection configuration to connect to the server and the mysql database.
 
-#### Dependencies?
+__Dependencies?__
 
 Not necessarily a dependency but it needs the database name, username and password to be able to connect.
 
@@ -57,22 +57,36 @@ Config.json as this uses the database and needs config.json to connect. This pie
 
 __Purpose__
 
+This file has the duel purpose of securing the database, if compromised and defining what is stored in the database by describing the variables.
+
 __Dependencies?__
+
+For security, bcrypt is needed (not an npm install).
 
 ## Public
 
+This is the file for the "public" -the front end of the fullstack
+
 ### js
+
+This file holds the javascript part of the front end of the project
 
 ### login.js
 
 __Purpose__
 
+Takes the input from the users log in, when they hit submit and then takes them to the member page if they were successful.
+
 __Dependencies?__
+
+members.js and members.html- because when you successfully log in, you replace the window location with members, so you don't only need the view (html) you also need the ability to manipulate the age
 
 ### member.js
 
 
 __Purpose__
+
+Does a GET request to see which is logged in and updates the current member name/email 
 
 __Dependencies?__
 
@@ -85,6 +99,7 @@ __Dependencies?__
 ### stylesheets
 
 ### login.html
+
 __Purpose__
 
 __Dependencies?__
@@ -103,29 +118,56 @@ __Dependencies?__
 
 ## Routes
 
+This file contains all the routes part of our code, which interacts with the controller to help display the view. 
+
 ### api-routes.js
+
 
 __Purpose__
 
+Contains routes for logging in and out and getting the user specific data to be displayed client side. 
+
 __Dependencies?__
+
+This file is both dependent on the models file (communicating with the database) and the config/passport file. 
 
 ### html-routes.js
 
 __Purpose__
 
+Checks whether or not the user is signed in and whether the user has an account. Then, based on the checks it sends them to the correct html page.
+
 __Dependencies?__
+
+In order to check if the user has an account it needs to use the isAuthenticated.js file and in order to send the user to a different site (based off of authenticated or not); it needs login.html, members.html and signup.html.
 
 ## package.json
 
 __Purpose__
 
+Contains all the package info (all the npm installs along with the basics). It also contains version info.
+
 __Dependencies?__
+
+Mostly just the user (or installation person) and all the npm installs -although much of the code is dependant on these installs
 
 ## server.js 
 
 __Purpose__
 
+server.js requires all the packages, creates express and the middleware, creates routs, syncs databases/logs, sets up the PORT and logs messages in the terminal if successfully connected to server.
+
 __Dependencies?__
+
+* express
+* express-sessions
+* config/passport
+* models (folder)
+* public (folder)
+* html-routes.js
+* api-routes.js
+* PORT
+
 
 At the end of the tutorial, add instructions for how you could now add changes to this project.
 
