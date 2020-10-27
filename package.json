@@ -1,0 +1,26 @@
+{
+  "name": "ReverseEngineeringCode",
+  "version": "1.0.0",
+  "description": "Reverse engineer the starter code provided and create a tutorial for the code.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RKSouth/ReverseEngineeringCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RKSouth/ReverseEngineeringCode/issues"
+  },
+  "homepage": "https://github.com/RKSouth/ReverseEngineeringCode#readme"
+}

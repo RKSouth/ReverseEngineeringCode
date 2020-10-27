@@ -18,9 +18,11 @@ module.exports = function(app) {
       email: req.body.email,
       password: req.body.password
     })
+    //after that redirect to the login 
       .then(function() {
         res.redirect(307, "/api/login");
       })
+      //if it doesn't create a new user throw a status 404 error
       .catch(function(err) {
         res.status(401).json(err);
       });

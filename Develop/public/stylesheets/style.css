@@ -1,3 +1,5 @@
+/* for both the form signup and the form log in make the margin at the top 50 pixels */
+
 form.signup,
 form.login {
   margin-top: 50px;
