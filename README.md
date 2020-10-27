@@ -2,13 +2,42 @@
 
 Reverse engineer the starter code provided and create a tutorial for the code.
 
+![Reverse-Engineer](Assets/finishedproduct.png)
+
 In the `Develop` folder, there is starter code for a project. Begin inspecting the code to get an understanding of each file's responsibility. Then, README markdown file, write a tutorial explaining *every* file and its purpose in as fine as detail as possible. If one file is dependant on other files, be sure to let the user know.
 
 
+## Table of Contents
+* [Technologies Used](#Technologies_Used)
+* [Getting Started](#Getting_Started)
+* [Tutorial](#Tutorial)
+* [Usage](#Usage)
+* [Author](#Author)
+* [Credits](#Credits)
+* [License](#License)
+
+## Technologies_Used
+* JavaScript 
+* HTML
+* CSS
+* express.js
+* express-sessions
+* [node.js](https://www.npmjs.com/)
+* [mysql](https://www.mysqltutorial.org/)
+* passport.js
+* sequelize
+* bcrypt.js 
+
+
+## Getting Started
+
+## Tutorial
+
 ## Config
 
-
 ### Middleware
+
+Can be easily required/called anywhere
 
 #### isAuthenticated.js
 
@@ -90,31 +119,52 @@ Does a GET request to see which is logged in and updates the current member name
 
 __Dependencies?__
 
+This file is dependant on the api routes to do it's work
+
 ### signup.js
 
 __Purpose__
 
+Gets users input data and saves it into user data and then logs in the user into the member area.
+
 __Dependencies?__
 
+Uses api routes, the members html (and js), and passport js.
+
 ### stylesheets
+
+This folder is meant to hold the CSS that will alter the styling of the page
 
 ### login.html
 
 __Purpose__
 
+This is the html log in page. It contains the forms, buttons and links to get from page to page and trigger the activities the user wants to make.
+
 __Dependencies?__
+
+login.html is dependant on login.js
 
 ### members.html
 
+
 __Purpose__
 
+members.html welcomes members by their email address, it also gives them the option to log out.
+
 __Dependencies?__
+
+Mostly just members.js but also will take you to the log in page (once you log out).
 
 ### signup.html
 
 __Purpose__
 
+The html that contains the sign up form. Also, allows you to navigate to the log in page
+
 __Dependencies?__
+
+Dependant on sign.up.js but also the api routes.
 
 ## Routes
 
