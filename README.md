@@ -12,106 +12,120 @@ In the `Develop` folder, there is starter code for a project. Begin inspecting t
 
 #### isAuthenticated.js
 
-##### Purpose
+#### Purpose
 
-##### Dependencies?
+This file restricts routes tht user is not allowed to visit if they are not logged in -i.e. the logged in page.
+
+#### Dependencies?
 
 
 ### config.json
 
-##### Purpose
+#### Purpose
 
-##### Dependencies?
+connection configuration to connect to the server and the mysql database.
+
+#### Dependencies?
+
+Not necessarily a dependency but it needs the database name, username and password to be able to connect.
 
 ### passport.js
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+Contains a javascript logic that tells passport that we want to log in with specifically an email address and a password. If something isn't entered, it will ask for it again. 
+
+__Dependencies?__
+
+passport.js is dependant on passport, passport-local and models to work. 
 
 ## Models
 
+This is the part of the code connects to both the controllers and the database
+
 ### index.js
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+Connects to the database and imports the users log in data
+
+__Dependencies?__
+
+Config.json as this uses the database and needs config.json to connect. This piece also uses sequelize so it's dependant on the user typing in "npm install mysql2"
 
 ### user.js
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
 ## Public
 
 ### js
 
-#### login.js
+### login.js
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
-#### member.js
-
-
-##### Purpose
-
-##### Dependencies?
-
-#### signup.js
+### member.js
 
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
+
+### signup.js
+
+__Purpose__
+
+__Dependencies?__
 
 ### stylesheets
 
 ### login.html
+__Purpose__
 
-##### Purpose
-
-##### Dependencies?
+__Dependencies?__
 
 ### members.html
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
 ### signup.html
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
 ## Routes
 
 ### api-routes.js
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
 ### html-routes.js
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
 ## package.json
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
 ## server.js 
 
-##### Purpose
+__Purpose__
 
-##### Dependencies?
+__Dependencies?__
 
 At the end of the tutorial, add instructions for how you could now add changes to this project.
 
