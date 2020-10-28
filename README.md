@@ -51,6 +51,8 @@ Use passport_demo;
 7. open browser and put in http://localhost:8000/
 
 ## Tutorial
+<!-- 
+[video](https://drive.google.com/file/d/1TdPSr2PT32BjckpBcn8RfPCjxyQY0haE/view) -->
 
 This section describes each file's intended purpose and what it's dependencies are. 
 
@@ -68,6 +70,7 @@ This file restricts routes tht user is not allowed to visit if they are not logg
 
 __Dependencies?__
 
+ none, really
 
 ### config.json
 
